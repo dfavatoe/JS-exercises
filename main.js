@@ -144,19 +144,68 @@ const classNat = {
 console.log("Italian Students: ", classNat.italian.name);
 
 //? Exercise 11
+console.log("Exercise 11");
 function myMulti1() {
     2 * 2;
 }
 console.log(myMulti1); 
 
-
+//? Exercise 12
+console.log("Exercise 12");
 function myMulti2() {
-    let x = 2;
-    let y = 3;
-    return x * y;
+    return 2 * 3;
+}
+console.log(myMulti2());
+
+//? Exercise 13
+console.log("Exercise 13");
+function myMulti3(p1, p2) {
+    return p1 * p2;
+}
+console.log(myMulti3(2, 3), myMulti3(2, 4), myMulti3(4, 5));
+
+//? Exercise 14
+console.log("Exercise 14");
+function typeTri(a1, a2, a3) {
+    if ((a1 == a2) && (a2 == a3) && (a1 == a3)) {
+        console.log("Equilateral");
+    } else if ((a1 != a2) && (a2 != a3) && (a1 != a3)) {
+        console.log("Scalene"); 
+    } else {
+        console.log("Isosceles"); 
+    }
 }
 
-let times = myMulti2;
-console.log(times); 
+console.log(typeTri(120, 30, 30));
 
-//
+//? Exercise 15
+console.log("Exercise 15");
+const minArray = [30, 40, 20, 60];
+
+let minValue = Infinity;
+
+function minItem () {
+    for (item of minArray) {
+        if (item < minValue) {
+            minValue = item;
+        }
+    }
+    return minValue;
+}
+console.log(minItem());
+
+//? Exercise 16
+console.log("Exercise 16");
+const maxArray = [30, 40, 20, 60];
+
+let maxValue = -Infinity;
+
+function maxItem () {
+    for (item of maxArray) {
+        if (item > maxValue) {
+            maxValue = item;
+        }
+    }
+    return maxValue;
+}
+console.log(maxItem());
