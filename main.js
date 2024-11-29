@@ -158,3 +158,5 @@ function myMulti2() {
 
 let times = myMulti2;
 console.log(times); 
+
+//
