@@ -209,3 +209,130 @@ function maxItem () {
     return maxValue;
 }
 console.log(maxItem());
+
+//? Exercise 17
+console.log("Exercise 17");
+
+const arr = [3,6,67,6,23];
+const ind = 1;
+function printIndex (arr, ind) {
+    return arr[ind];
+
+}
+console.log (printIndex(arr, ind));
+
+//? Exercise 18
+console.log("Exercise 18");
+
+const myColor = ["Red", "Green", "White", "Black"];
+let jointText = myColor.join(" <=> ");
+
+console.log (jointText);
+
+//? Exercise 19
+console.log("Exercise 19");
+
+function revNumbers (myNumb) {
+    const myNumbStr = myNumb.toString();
+    let revNumb = myNumbStr.split("").reverse().join("");
+    return revNumb;
+}
+
+console.log (revNumbers(34567));
+
+//? Exercise 20
+console.log("Exercise 20");
+
+function orderString (myString) {
+    return myString.split("").sort().join("");
+}
+
+console.log (revNumbers("REVERSE"));
+
+//? Exercise 21
+console.log("Exercise 21");
+
+const phrase = "Web Development Tutorial";
+
+let longestWord = ""
+function findLongWord (phrase) {
+    const arrSplit = phrase.split(" ");
+    for (item of arrSplit) {
+        if (item.length > longestWord.length) {
+            longestWord = item; 
+        }
+    }
+    return longestWord;
+}
+console.log (findLongWord(phrase));
+
+//? Exercise 22 
+console.log("Exercise 22");
+
+let text = "Javascript";
+let tempStr = ""
+
+function replaceLetter (lettOriginal, text, lettReplace) {
+    
+    for (i = 0; i < text.length; i++) {
+        if (text[i] == "a") {
+            tempStr += lettReplace;
+        } else {tempStr += text[i];}
+    }
+    return tempStr;
+}
+
+console.log(replaceLetter("a", text, "1"));
+
+//? Exercise 23 
+console.log("Exercise 23");
+
+let sentence = "prince of persia";
+var tempSent = "";
+
+function firstUpperCase (sentence) {
+    let sentSplit = sentence.split(" ")
+    for (i=0; i < sentSplit.length; i++) {
+        tempSent += sentSplit[i].charAt(0).toUpperCase() + sentSplit[i].slice(1) + " ";
+    }
+    return tempSent;
+}
+
+console.log(firstUpperCase(sentence));
+
+//? Exercise 24
+console.log("Exercise 24"); //Why am I getting the lest result as undefined?
+
+let x = 9;
+
+function countDown () {
+    while (x > 1) {
+        x--;
+        if (x % 2 == 0) {
+            console.log(x);
+        }
+    }
+}
+
+console.log(countDown(x));
+
+//? Exercise 25
+console.log("Exercise 25");
+
+// let y = 1;
+// let w = 13;
+// let z = y;
+
+function betweenNumbs (y, w) {
+    let z = y;
+    while (z >= y && z <= w) {
+        if (z % 2 == 1) {
+            console.log(z);
+        }
+        z++;
+    }
+
+}
+
+
+console.log(betweenNumbs(3, 17));
