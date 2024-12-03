@@ -334,5 +334,4 @@ function betweenNumbs (y, w) {
 
 }
 
-
 console.log(betweenNumbs(3, 17));
