@@ -335,3 +335,22 @@ function betweenNumbs (y, w) {
 }
 
 console.log(betweenNumbs(3, 17));
+
+//? Exercise 26
+console.log("Exercise 26");
+
+var array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
+
+function printRepeat (array) {
+    let arrSort = array.sort(function(a,b){return a-b}); // compare function is not strictly necessary
+    for (let i = 0; i < arrSort.length; i++) {
+        if (arrSort[i] === arrSort[i + 1]) {
+            console.log(arrSort[i]);
+        }
+    }
+}
+
+console.log(printRepeat(array));
+
+//? Exercise 27
+console.log("Exercise 27");
